@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCM 遠端監造系統 - 天思數位科技 GEOSENSE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f4f4f4;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .email-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .nav-link {
+            font-size: 14px;
+            color: #666;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #2563eb;
+        }
+
+        .hero-img-container {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .hero-img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .content-area {
+            padding: 40px 60px;
+        }
+
+        .headline {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.4;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .sub-headline-link {
+            display: block;
+            font-size: 18px;
+            color: #2563eb;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 40px;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            transition: color 0.3s;
+        }
+
+        .sub-headline-link:hover {
+            color: #1d4ed8;
+        }
+
+        .body-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #4a4a4a;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            border-left: 4px solid #94c9a9;
+            background-color: #f9fdfb;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .cta-section {
+            background-color: #f0f7f3;
+            border-radius: 8px;
+            padding: 40px 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .primary-button {
+            display: inline-block;
+            background-color: #94c9a9;
+            color: #ffffff;
+            padding: 16px 56px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 15px rgba(148, 201, 169, 0.4);
+        }
+
+        .primary-button:hover {
+            background-color: #7ab892;
+            transform: translateY(-1px);
+        }
+
+        .footer {
+            background-color: #f9f9f9;
+            padding: 30px 60px;
+            border-top: 1px solid #eeeeee;
+            font-size: 13px;
+            color: #888;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 640px) {
+            .content-area { padding: 30px 20px; }
+            .headline { font-size: 24px; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="email-container">
+        <!-- 頂部導航欄 -->
+        <header class="flex justify-between items-center px-10 py-6 border-b border-gray-50">
+            <div class="flex items-center">
+                <span class="text-xl font-bold tracking-tighter text-gray-800">GEOSENSE</span>
+            </div>
+            <nav class="nav-links">
+                <a href="https://www.geosense.tw/tw/products_detail" class="nav-link">產品詳情</a>
+                <a href="https://rcm.geosense.tw/RcmCloud/fe/Login" class="nav-link">系統試用</a>
+                <a href="https://www.geosense.tw/tw/Index" class="nav-link">天思官網</a>
+            </nav>
+        </header>
+
+        <!-- 主要內容區 -->
+        <div class="content-area">
+            <!-- 主視覺圖片 -->
+            <div class="mb-10">
+                <div class="hero-img-container">
+                    <!-- 使用 RCM 系統智慧工地主視覺 -->
+                    <img src="image_66b8a0.jpg" alt="RCM 遠端監造系統示意圖" class="hero-img">
+                </div>
+            </div>
+
+            <!-- 標題區域 -->
+            <h1 class="headline">解決公共工程管理痛點</h1>
+            
+            <!-- 產品連結（以標語形式呈現，隱藏網址） -->
+            <a href="https://www.geosense.tw/tw/products_detail" class="sub-headline-link">
+                RCM 遠端監造｜智慧工地與三級品管最佳實踐方案
+            </a>
+
+            <!-- 文案內容 -->
+            <div class="body-text">
+                <p class="mb-4">
+                    公共工程日益複雜、案件繁多，您是否也遇過這些挑戰？
+                </p>
+                
+                <ul class="list-disc ml-6 mb-6 space-y-2 text-gray-600 italic">
+                    <li>工程照片、文件難以彙整，進度不透明？</li>
+                    <li>品質抽查與三級品管文件容易遺漏或重複？</li>
+                </ul>
+
+                <p class="mb-6">
+                    天思數位科技 推出的<strong>【RCM 遠端監造系統】</strong>就是為了解決這些問題！
+                </p>
+                
+                <div class="highlight-box">
+                    <p class="font-bold text-gray-800 mb-2">為什麼選擇 RCM？</p>
+                    <p>RCM（Remote Construction Monitoring）專為符合<strong>「工程會三級品管制度」</strong>設計，讓您施工進度、品質管理一站完成。透過數位化存證與雲端管理，將繁瑣的行政流程轉化為直觀的決策依據。</p>
+                </div>
+            </div>
+
+            <!-- 行動呼籲區域 -->
+            <div class="cta-section">
+                <p class="text-gray-700 font-bold mb-6 text-lg text-center">讓工程管理更簡單、更精準</p>
+                <!-- 試用按鈕 -->
+                <a href="https://rcm.geosense.tw/RcmCloud/fe/Login" class="primary-button">立即開啟系統試用</a>
+            </div>
+        </div>
+
+        <!-- 頁尾資訊 -->
+        <footer class="footer">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p class="font-bold text-gray-700 mb-2 text-sm uppercase tracking-wider">天思數位科技 GEOSENSE</p>
+                    <p>📞 電話：04-24516669 #6302</p>
+                    <p>✉️ Email：special@gis.tw</p>
+                    <p>🌐 官網：<a href="https://www.geosense.tw/tw/Index" class="text-blue-500 hover:underline">www.geosense.tw</a></p>
+                </div>
+                <div class="md:text-right flex flex-col justify-end text-xs">
+                    <p>© 2025 GEOSENSE. All rights reserved.</p>
+                    <p>專業．效率．透明．智慧監造領導者</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
